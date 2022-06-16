@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: url(../resources/bg-intro-desktop.png);
+}
+.container {
+    background-color: hsla(0, 100%, 74%, 0.788);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content,  .form {
+    width: 40%;
+}
+.content {
+    color: #fff;
+    font-size: 16px;
+}
+.content h1 {
+    width: 80%;
+    font-size: 40px;
+    line-height: 55px;
+    margin: 0 0 20px 0;
+}
+.content p {
+    width: 80%;
+}
+.form form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px hsla(150, 3%, 12%, 0.747);
+}
+.voucher {
+    background-color: hsl(248, 32%, 49%);
+    margin: 20px 0;
+    padding: 20px 20px;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 4px hsla(150, 3%, 12%, 0.747);
+}
+.voucher p {
+    font-weight: bolder;
+}
+.voucher span {
+    font-weight: 100;
+}
+form input {
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+form input:focus {
+    border: solid 2px hsl(248, 32%, 49%);
+    outline: none;
+    transition: ease-in 0.1s;
+}
+.tnc {
+    font-size: 11px;
+    text-align: center;
+}
+.tnc a {
+    color: hsl(0, 100%, 74%);
+}
+.btn {
+    cursor: pointer;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: hsl(154, 48%, 69%);
+    transition: ease-in-out 0.2s;
+}
+
+
+
+/* Media queries */
+
+@media (max-width:775px) {
+    
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .content,  .form {
+        width: 80%;
+    }
+    .content h1 {
+        width: 100%;
+        font-size: 30px;
+        line-height: 39px;
+        margin: 0px 0 10px 0;
+        text-align: center;
+    }
+    .content p {
+        text-align: center;
+        width: 100%;
+    }
+    .form, .content {
+        margin: 40px 0;
+    }
+}
